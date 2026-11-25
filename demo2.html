@@ -3,278 +3,227 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Адвокат в Івано-Франківську — вул. Героїв Чернігова, 5А</title>
-<meta name="description" content="Адвокат в Івано-Франківську та області. Можна прийти: вул. Героїв Чернігова, 5А. За 1 день — план дій. Спершу договір, потім оплата.">
-<meta name="theme-color" content="#c8963d">
+<title>Адвокат в Івано-Франківську — Василь Масюк</title>
+<meta name="description" content="Адвокат в Івано-Франківську та області. Ясність за 5 хвилин, план дій за 1 день, спершу договір — потім оплата. Вул. Героїв Чернігова, 5А.">
+<meta name="theme-color" content="#f26a1b">
 <meta name="robots" content="noindex,nofollow">
 <link rel="preload" href="fonts/commissioner.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:"Commissioner";src:url(fonts/commissioner.woff2) format("woff2");font-weight:100 900;font-display:swap}
 
 :root{
-  --facade:#d6a446;
-  --facade-hi:#e4b960;
-  --joint:rgba(112,72,14,.22);
-  --ink:#2a2114;
-  --ink-2:#4a3a20;
-  --enamel:#1c3d8c;
-  --enamel-deep:#132c69;
-  --rim:#f3efe4;
-  --door:#23443a;
-  --door-deep:#17302a;
-  --door-line:#2f5a4c;
-  --brass-hi:#efd994;
-  --brass:#c9a24a;
-  --brass-lo:#94722c;
-  --engrave:#3a2a0c;
-  --stone:#ece2cc;
-  --stone-lo:#cdbf9f;
-  --glass:#e8eef0;
+  --side-a:#f26a1b;
+  --side-b:#17a2a3;
+  --ground:var(--side-a);
+  --ink:#24110a;
+  --ink-2:#4a2414;
+  --relief:#ffffff;
+  --sheet:#fff8f0;
 }
+html.side-b{--ground:var(--side-b);--ink:#05292a;--ink-2:#0d4546}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scrollbar-color:var(--enamel) var(--facade)}
-body{margin:0;background:var(--facade);color:var(--ink);font:400 17px/1.55 "Commissioner",system-ui,sans-serif;caret-color:var(--enamel)}
-::selection{background:var(--enamel);color:#fff}
-a{color:var(--enamel-deep);text-decoration-thickness:1.5px;text-underline-offset:3px}
-:focus-visible{outline:3px solid var(--enamel);outline-offset:3px;border-radius:6px}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--ink) var(--ground)}
+body{margin:0;background:var(--ground);color:var(--ink);font:450 17px/1.55 "Commissioner",system-ui,sans-serif;transition:background-color .9s cubic-bezier(.16,1,.3,1),color .9s ease}
+::selection{background:var(--ink);color:var(--relief)}
+a{color:inherit;text-decoration-thickness:2px;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:8px}
 img{display:block;max-width:100%;height:auto}
 figure{margin:0}
-h1,h2,h3{margin:0;text-wrap:balance;font-family:"Commissioner",system-ui,sans-serif}
-p{margin:0 0 16px;max-width:62ch}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0 0 16px;max-width:60ch}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px 120px}
 
-/* ---------- facade ---------- */
-.facade{position:relative;max-width:820px;margin:0 auto;padding:0 18px 120px;
-  background:
-    repeating-linear-gradient(180deg,transparent 0 62px,var(--joint) 62px 64px),
-    linear-gradient(90deg,rgba(255,255,255,.06),transparent 30%,transparent 70%,rgba(0,0,0,.05)),
-    var(--facade)}
-.cornice{height:46px;margin:0 -18px;background:linear-gradient(180deg,var(--stone) 0 18px,var(--stone-lo) 18px 22px,var(--stone) 22px 34px,rgba(0,0,0,.12) 34px 46px)}
+/* ---------- sleeve (first viewport) ---------- */
+.sleeve{padding-top:22px}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.logo{font-weight:900;font-variation-settings:"FLAR" 100;font-size:clamp(46px,14vw,104px);line-height:.86;letter-spacing:-.045em;color:var(--relief);text-transform:lowercase}
+.cat{font-size:12px;line-height:1.35;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-align:right;color:var(--ink);padding-top:6px;font-variant-numeric:tabular-nums}
+.cover{display:grid;grid-template-columns:1fr 1.25fr;gap:14px;align-items:end;margin-top:18px}
+.tracks{list-style:none;margin:0;padding:0;font-size:13.5px;line-height:1.3;font-weight:650}
+.tracks li+li{margin-top:7px}
+.tracks a{display:grid;grid-template-columns:26px 1fr;text-decoration:none;color:var(--ink);padding:2px 0}
+.tracks a:hover .t{text-decoration:underline}
+.tracks .n{font-weight:850;color:var(--relief)}
+.portrait{aspect-ratio:1;overflow:hidden;border-radius:4px;box-shadow:0 10px 24px rgba(60,20,0,.28)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 6%;filter:sepia(.18) saturate(1.12) contrast(1.03)}
+.title{margin-top:22px}
+.title h1{font-size:clamp(30px,8.4vw,58px);line-height:1.04;letter-spacing:-.03em;font-weight:850;font-variation-settings:"FLAR" 60;color:var(--relief)}
+.title p{margin:10px 0 0;font-size:17px;line-height:1.45;font-weight:550}
 
-/* enamel plate */
-.enamel{position:relative;display:block;background:var(--enamel);color:#fff;border-radius:12px;
-  box-shadow:inset 0 0 0 4px var(--enamel),inset 0 0 0 6.5px var(--rim),0 2px 0 rgba(0,0,0,.18),0 10px 22px rgba(60,38,6,.28)}
-.enamel::before,.enamel::after{content:"";position:absolute;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;
-  background:radial-gradient(circle at 35% 35%,#fff 0 1.5px,#b9b4a6 2px 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
-.enamel::before{left:14px}.enamel::after{right:14px}
+.cta{margin-top:22px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border-radius:999px;font:inherit;font-weight:800;text-decoration:none;transition:transform .15s ease,background-color .15s ease,color .15s ease}
+.btn:active{transform:scale(.98)}
+.btn-call{background:var(--relief);color:var(--ink);min-height:58px;font-size:18px;box-shadow:0 8px 18px rgba(40,10,0,.22)}
+.btn-call:hover{background:var(--sheet)}
+.btn-call .num{font-weight:600;font-size:15px;font-variant-numeric:tabular-nums;opacity:.8}
+.btn-call svg{width:20px;height:20px}
+.msgs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.btn-msg{border:2px solid var(--ink);color:var(--ink);font-size:15px}
+.btn-msg:hover{background:var(--ink);color:var(--relief)}
+.small{font-size:14.5px;line-height:1.45}
+.cta .small{margin:12px 0 0}
+.cta .small a{font-weight:800;font-variant-numeric:tabular-nums}
 
-.street{display:flex;align-items:stretch;gap:12px;margin:34px 0 0;transform-origin:20% 0}
-.street .enamel{flex:1;padding:14px 34px 14px;text-transform:uppercase}
-.street small{display:block;font-size:13px;letter-spacing:.2em;font-weight:600;opacity:.85}
-.street b{display:block;font-size:clamp(21px,6.2vw,34px);line-height:1.05;letter-spacing:.04em;font-weight:800}
-.housenum{flex:0 0 76px;display:grid;place-items:center;border-radius:50%;aspect-ratio:1;align-self:center;padding:0}
-.housenum::before,.housenum::after{display:none}
-.housenum span{font-size:30px;font-weight:800;letter-spacing:-.02em}
-@media (prefers-reduced-motion:no-preference){
-  .street{animation:settle 1.1s cubic-bezier(.2,1.6,.4,1) both .15s}
-  @keyframes settle{from{transform:rotate(-2.4deg)}to{transform:rotate(0)}}
-}
+/* ---------- sides & tracks ---------- */
+.side-label{display:flex;align-items:center;gap:14px;margin:96px 0 8px;font-weight:900;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink)}
+.side-label::after{content:"";flex:1;height:2px;background:currentColor;opacity:.35}
+.track{padding-top:44px}
+.track-h{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;margin-bottom:14px}
+.track-h .n{font-weight:900;font-size:clamp(34px,9vw,56px);line-height:.9;letter-spacing:-.04em;color:var(--relief)}
+.track-h h2{font-size:clamp(24px,6.2vw,36px);line-height:1.08;letter-spacing:-.025em;font-weight:850;font-variation-settings:"FLAR" 60}
+.track p{font-size:17.5px;line-height:1.55}
+.liner{background:var(--sheet);color:#2a1a10;border-radius:6px;padding:18px 18px 4px;box-shadow:0 10px 24px rgba(40,10,0,.18)}
+.liner p{font-size:17px}
+.liner b{font-weight:800}
+.big{font-size:21px;line-height:1.35;font-weight:800}
 
-.hero{padding-top:30px}
-.hero h1{font-size:clamp(34px,9.6vw,64px);line-height:1.02;letter-spacing:-.025em;font-weight:850;font-variation-settings:"FLAR" 30;color:var(--ink)}
-.lead{font-size:19px;line-height:1.5;margin:16px 0 0;color:var(--ink)}
-.lead strong{font-weight:750}
-
-/* door */
-.door{position:relative;margin:30px auto 0;max-width:440px;padding:56px 22px 26px;background:var(--door);
-  border-radius:200px 200px 6px 6px;box-shadow:inset 0 0 0 8px var(--door-deep),inset 0 0 0 10px var(--door-line),0 18px 30px rgba(50,30,4,.35)}
-.door::before{content:"";position:absolute;left:50%;top:18px;width:58%;height:22px;margin-left:-29%;border-radius:100px 100px 0 0;border:2px solid var(--door-line);border-bottom:0}
-.sill{height:14px;max-width:470px;margin:0 auto;background:linear-gradient(180deg,var(--stone),var(--stone-lo));border-radius:2px;box-shadow:0 6px 10px rgba(60,38,6,.25)}
-.brass{position:relative;background:linear-gradient(115deg,var(--brass-hi) 0%,var(--brass) 38%,var(--brass-lo) 62%,var(--brass) 80%,var(--brass-hi) 100%);
-  color:var(--engrave);border-radius:6px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.18),0 3px 8px rgba(0,0,0,.35)}
-.brass .eng{text-shadow:0 1px 0 rgba(255,240,190,.55)}
-.nameplate{padding:14px 16px 12px;text-align:center}
-.nameplate .who{display:block;font-size:12.5px;letter-spacing:.32em;text-transform:uppercase;font-weight:650}
-.nameplate .nm{display:block;font-size:22px;letter-spacing:.06em;text-transform:uppercase;font-weight:800;margin-top:2px}
-.nameplate .rg{display:block;font-size:12.5px;letter-spacing:.04em;margin-top:4px;font-weight:550}
-.portrait-win{margin:18px auto 0;width:150px;padding:8px;background:var(--stone);border-radius:76px 76px 4px 4px;box-shadow:inset 0 0 0 2px var(--stone-lo),0 6px 14px rgba(0,0,0,.3)}
-.portrait-win img{border-radius:70px 70px 2px 2px;aspect-ratio:4/5;object-fit:cover;object-position:50% 16%;width:100%}
-
-.bell{display:flex;align-items:center;justify-content:center;gap:12px;min-height:60px;margin-top:20px;padding:10px 16px;text-decoration:none;font-weight:800;font-size:18px;letter-spacing:.02em;
-  transition:transform .12s ease,box-shadow .12s ease}
-.bell .btn-dot{width:26px;height:26px;border-radius:50%;flex:none;background:radial-gradient(circle at 40% 35%,#fff7dc 0 3px,#d9b45c 4px,#8a6a28 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.25),0 1px 0 rgba(255,255,255,.4)}
-.bell .num{font-weight:600;font-size:15px;font-variant-numeric:tabular-nums}
-.bell:active{transform:translateY(2px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),0 1px 3px rgba(0,0,0,.35)}
-.mplates{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
-.mplate{display:flex;align-items:center;justify-content:center;min-height:48px;font-weight:700;font-size:15px;color:#fff;text-decoration:none;border-radius:8px;
-  box-shadow:inset 0 0 0 3px var(--enamel),inset 0 0 0 4.5px var(--rim),0 3px 8px rgba(0,0,0,.35);transition:transform .12s ease}
-.mplate::before,.mplate::after{display:none}
-.mplate:active{transform:translateY(2px)}
-.door .alt{margin:14px 0 0;text-align:center;color:#e9efe9;font-size:14.5px}
-.door .alt a{color:#fff;font-weight:700}
-.door .note{margin:4px 0 0;text-align:center;color:#c6d6cf;font-size:14px}
-
-.mapline{display:flex;justify-content:center;margin:22px 0 0}
-.mapline a{font-weight:700}
-
-/* ---------- sections ---------- */
-section{padding-top:88px}
-.sign{display:inline-block;padding:12px 34px 12px;text-transform:uppercase;font-size:clamp(19px,5.4vw,28px);line-height:1.15;letter-spacing:.05em;font-weight:800;margin:0 0 22px}
-.intro{font-size:18.5px;line-height:1.5}
-
-.plates{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.plates li{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:start}
-.plates .oval{display:grid;place-items:center;width:52px;height:40px;border-radius:50%;font-weight:800;font-size:19px;padding:0}
-.plates .oval::before,.plates .oval::after{display:none}
-.plates b{font-weight:750}
-
-.plaque{padding:22px 22px 8px;margin-top:4px}
-.plaque::before,.plaque::after{content:"";position:absolute;top:10px;width:8px;height:8px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff3cc 0 1.5px,#7d5f22 2px)}
-.plaque::before{left:10px}.plaque::after{right:10px}
-.plaque p{font-size:17px;line-height:1.5}
-.plaque .big{font-size:21px;font-weight:800;letter-spacing:.01em}
-
-.window{position:relative;padding:12px;background:var(--stone);border-radius:6px;box-shadow:inset 0 0 0 2px var(--stone-lo),0 10px 24px rgba(60,38,6,.3)}
-.window-in{background:linear-gradient(160deg,#f6f8f8,var(--glass));border-radius:3px;box-shadow:inset 0 0 0 6px #2c3c37,inset 0 0 22px rgba(0,0,0,.18)}
-.vitrina{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 16px 16px;scrollbar-width:thin;scrollbar-color:var(--enamel) transparent}
-.vitrina figure{flex:0 0 min(64vw,230px);scroll-snap-align:start}
-.vitrina a{display:block;background:#fff;padding:5px;box-shadow:0 4px 10px rgba(0,0,0,.18)}
-.vitrina figcaption{margin-top:10px;font-size:14.5px;line-height:1.35;font-weight:700;color:var(--ink)}
-.window-sill{height:12px;margin:0 -6px;background:linear-gradient(180deg,var(--stone),var(--stone-lo));border-radius:2px}
-.hint{margin:12px 0 0;font-size:14px;color:var(--ink-2)}
-
-.board{display:grid;gap:14px;padding:16px}
-.board figure{background:#fff;padding:5px;box-shadow:0 3px 8px rgba(0,0,0,.18)}
-details.more{margin-top:16px}
-details.more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;min-height:46px;padding:0 18px;font-weight:750;color:#fff;background:var(--enamel);border-radius:8px;box-shadow:inset 0 0 0 2px var(--enamel),inset 0 0 0 3.5px var(--rim)}
+.vinyl{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 16px;margin:0 -18px 0 0;scrollbar-width:thin;scrollbar-color:var(--ink) transparent}
+.vinyl figure{flex:0 0 min(66vw,240px);scroll-snap-align:start}
+.vinyl a{display:block;background:#fff;padding:5px;border-radius:4px;box-shadow:0 6px 14px rgba(0,30,30,.22)}
+.vinyl img{border-radius:2px}
+.vinyl figcaption{margin-top:10px;font-weight:800;font-size:15px;line-height:1.3}
+.reviews{display:grid;gap:14px}
+.reviews figure{background:#fff;padding:5px;border-radius:4px;box-shadow:0 6px 14px rgba(0,30,30,.2)}
+details.more{margin-top:14px}
+details.more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border:2px solid var(--ink);border-radius:999px;font-weight:800}
 details.more summary::-webkit-details-marker{display:none}
 details.more .shut{display:none}
 details.more[open] .open{display:none}
 details.more[open] .shut{display:inline}
-details.more .board{padding:16px 0 0}
-
-.frames{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:22px 0 18px}
-.frames a{display:block;padding:5px;background:var(--brass);box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),0 4px 10px rgba(0,0,0,.28);border-radius:2px}
-.frames img{aspect-ratio:3/4;object-fit:cover;object-position:50% 0;width:100%;background:#fff}
-.who p{font-size:17.5px}
-
-.gift{display:grid;grid-template-columns:100px 1fr;gap:18px;align-items:start}
-.gift .book{padding:5px;background:#fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-2deg)}
-.gift ul{margin:0;padding:0 0 0 18px}
+details.more .reviews{margin-top:14px}
+.docs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+.docs a{display:block;background:#fff;padding:4px;border-radius:3px;box-shadow:0 4px 10px rgba(0,30,30,.2)}
+.docs img{aspect-ratio:3/4;object-fit:cover;object-position:50% 0;width:100%}
+.faq details{border-top:2px solid rgba(5,41,42,.25)}
+.faq details:last-child{border-bottom:2px solid rgba(5,41,42,.25)}
+.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 30px;gap:12px;align-items:center;min-height:56px;padding:8px 0;font-weight:800;font-size:17.5px;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary i{position:relative;width:28px;height:28px;border-radius:50%;background:var(--ink)}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;background:var(--relief);transform:translate(-50%,-50%)}
+.faq summary i::before{width:12px;height:2.5px}
+.faq summary i::after{width:2.5px;height:12px;transition:opacity .2s}
+.faq details[open] summary i::after{opacity:0}
+.faq details p{margin:0 0 16px;font-size:16.5px;line-height:1.55;color:var(--ink-2)}
+.gift{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
+.gift .book{background:#fff;padding:4px;border-radius:3px;box-shadow:0 6px 14px rgba(0,30,30,.22)}
+.gift ul{margin:0;padding-left:18px}
 .gift li{margin-bottom:10px}
 
-.faq details{margin-bottom:10px;background:rgba(255,255,255,.18);border-radius:8px;box-shadow:inset 0 0 0 1px rgba(112,72,14,.25)}
-.faq summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr 28px;gap:10px;align-items:center;min-height:54px;padding:8px 14px;font-weight:750;font-size:17px;line-height:1.35}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary i{width:26px;height:26px;border-radius:50%;background:var(--enamel);position:relative;box-shadow:inset 0 0 0 2px var(--rim)}
-.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;background:#fff;transform:translate(-50%,-50%)}
-.faq summary i::before{width:11px;height:2px}
-.faq summary i::after{width:2px;height:11px;transition:opacity .2s}
-.faq details[open] summary i::after{opacity:0}
-.faq details p{margin:0;padding:0 14px 14px;color:var(--ink-2);font-size:16.5px;line-height:1.55}
+.outro{margin-top:100px;text-align:left}
+.outro h2{font-size:clamp(30px,8vw,52px);line-height:1.04;letter-spacing:-.03em;font-weight:900;font-variation-settings:"FLAR" 100;color:var(--relief)}
+.where{margin-top:28px;font-weight:700;font-size:18px;line-height:1.35}
+.where small{display:block;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:4px}
+.where a{display:inline-block;margin-top:6px;font-size:15px}
+.soc{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:30px;font-size:14.5px;font-weight:650}
+footer{margin-top:24px;font-size:13px;color:var(--ink-2)}
 
-.close-door{margin-top:8px}
-.addr-plate{margin:26px auto 0;max-width:440px;padding:14px 34px;text-align:center}
-.addr-plate .t{display:block;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;opacity:.85;font-weight:600}
-.addr-plate .a{display:block;font-size:19px;font-weight:800;letter-spacing:.02em;line-height:1.25;margin-top:4px}
-.addr-plate a{color:#fff;font-size:14.5px;font-weight:700;display:inline-block;margin-top:6px}
-.soc{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin-top:34px;font-size:14.5px}
-footer{margin-top:28px;text-align:center;font-size:13px;color:var(--ink-2)}
-
-/* dock */
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--door);box-shadow:0 -6px 18px rgba(0,0,0,.25);transition:transform .35s cubic-bezier(.16,1,.3,1)}
-.dock-in{max-width:820px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:6px}
-.dock a{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:750;font-size:14px;text-decoration:none}
-.dock .brass{font-size:15.5px}
-.dock .mplate{font-size:13.5px}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink);transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.dock-in{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:6px}
+.dock a{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800;font-size:14px;text-decoration:none;color:var(--relief);border:2px solid rgba(255,255,255,.4)}
+.dock a.call{background:var(--relief);color:var(--ink);border-color:var(--relief);font-size:15.5px}
 .dock.away{transform:translateY(110%)}
 
-@media (min-width:700px){
-  .facade{padding:0 64px 80px;box-shadow:inset 22px 0 0 rgba(255,255,255,.08),inset -22px 0 0 rgba(0,0,0,.06)}
-  .cornice{margin:0 -64px}
-  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:end}
-  .door{margin-top:0}
-  .board{grid-template-columns:1fr 1fr}
-  .gift{grid-template-columns:150px 1fr}
+@media (min-width:720px){
+  .wrap{padding:0 48px 80px}
+  .cover{grid-template-columns:1fr 1.4fr;gap:28px}
+  .tracks{font-size:15px}
+  .sleeve-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:end}
+  .title{margin-top:0}
+  .reviews{grid-template-columns:1fr 1fr;align-items:start}
+  .gift{grid-template-columns:140px 1fr}
   .dock{display:none}
-  .facade{padding-bottom:80px}
 }
-@media (prefers-reduced-motion:reduce){.dock{transition:none}}
+@media (prefers-reduced-motion:reduce){body,.dock{transition:none}}
 </style>
 </head>
 <body>
-<main class="facade">
-  <div class="cornice" aria-hidden="true"></div>
+<main class="wrap">
 
-  <div class="street" aria-label="Адреса: вулиця Героїв Чернігова, 5А">
-    <div class="enamel"><small>вулиця</small><b>Героїв Чернігова</b></div>
-    <div class="enamel housenum"><span>5А</span></div>
-  </div>
-
-  <div class="hero-grid">
-    <section class="hero" aria-labelledby="h1" style="padding-top:30px">
-      <h1 id="h1">Адвокат в&nbsp;Івано&#8209;Франківську і&nbsp;області</h1>
-      <p class="lead">За 5&nbsp;хвилин скажу, що з&nbsp;вашою ситуацією. <strong>За&nbsp;1&nbsp;день</strong> дам план дій. Можна прийти особисто, а&nbsp;можна все вирішити онлайн.</p>
-    </section>
-
-    <div>
-      <div class="door" id="hero-cta">
-        <div class="brass nameplate"><span class="eng who">адвокат</span><span class="eng nm">Василь Масюк</span><span class="eng rg">кандидат юридичних наук</span></div>
-        <figure class="portrait-win"><img src="assets/portrait.webp" width="640" height="599" alt="Адвокат Василь Масюк"></figure>
-        <a class="brass bell" href="tel:+380961230671" data-ev="phone_click"><span class="btn-dot" aria-hidden="true"></span><span class="eng">Подзвонити</span> <span class="eng num">096 123 06 71</span></a>
-        <div class="mplates">
-          <a class="enamel mplate" href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
-          <a class="enamel mplate" href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
-          <a class="enamel mplate" href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
+  <!-- ===== the sleeve ===== -->
+  <header class="sleeve">
+    <div class="head">
+      <p class="logo" aria-label="Василь Масюк">василь<br>масюк</p>
+      <p class="cat">адвокат<br>свід. № 1552<br>з 2008</p>
+    </div>
+    <div class="cover">
+      <ol class="tracks" aria-label="Що ви отримуєте">
+        <li><a href="#a1"><span class="n">А1</span><span class="t">Ясність за 5&nbsp;хвилин</span></a></li>
+        <li><a href="#a2"><span class="n">А2</span><span class="t">План дій за 1&nbsp;день</span></a></li>
+        <li><a href="#a3"><span class="n">А3</span><span class="t">Документи в&nbsp;суді за 2&nbsp;дні</span></a></li>
+        <li><a href="#a4"><span class="n">А4</span><span class="t">Спершу договір, потім оплата</span></a></li>
+      </ol>
+      <figure class="portrait"><img src="assets/portrait.webp" width="640" height="599" alt="Адвокат Василь Масюк"></figure>
+    </div>
+    <div class="sleeve-grid">
+      <div class="title">
+        <h1>Адвокат в&nbsp;Івано&#8209;Франківську</h1>
+        <p>і&nbsp;області. Можна прийти: вул.&nbsp;Героїв Чернігова,&nbsp;5А. Судитися можу й&nbsp;онлайн.</p>
+      </div>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:+380961230671" data-ev="phone_click"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Подзвонити <span class="num">096 123 06 71</span></a>
+        <div class="msgs">
+          <a class="btn btn-msg" href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
+          <a class="btn btn-msg" href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
+          <a class="btn btn-msg" href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
         </div>
-        <p class="alt">Або МТС: <a href="tel:+380500108718" data-ev="phone_click">050 010 87 18</a></p>
-        <p class="note">Експрес-консультація безкоштовна. Це вас ні до чого не зобов'язує.</p>
-      </div>
-      <div class="sill" aria-hidden="true"></div>
-      <p class="mapline"><a href="https://www.google.com/maps/search/?api=1&amp;query=%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%2C%20%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D0%BE%D0%B2%D0%B0%2C%205%D0%90" rel="noopener">Як дійти — відкрити на карті</a></p>
-    </div>
-  </div>
-
-  <section aria-labelledby="h-steps">
-    <h2 id="h-steps" class="enamel sign">Як це буде</h2>
-    <p class="intro">Юридична проблема лякає не складністю, а&nbsp;невідомістю. Тому спершу я&nbsp;прибираю невідомість, а&nbsp;далі ми&nbsp;йдемо по&nbsp;кроках.</p>
-    <ol class="plates">
-      <li><span class="enamel oval" aria-hidden="true">1</span><div><b>Напишіть або подзвоніть</b> у&nbsp;Viber, WhatsApp, Telegram чи на&nbsp;телефон. Коротко опишіть, що сталося.</div></li>
-      <li><span class="enamel oval" aria-hidden="true">2</span><div><b>Надішліть документи</b> в&nbsp;месенджер. Паспорт не&nbsp;потрібен.</div></li>
-      <li><span class="enamel oval" aria-hidden="true">3</span><div><b>За&nbsp;1&nbsp;день</b> я&nbsp;даю план дій для вашої ситуації.</div></li>
-      <li><span class="enamel oval" aria-hidden="true">4</span><div><b>Документи можуть бути в&nbsp;суді за&nbsp;2&nbsp;дні.</b></div></li>
-      <li><span class="enamel oval" aria-hidden="true">5</span><div><b>Супровід:</b> суд, слідство, нотаріус, БТІ, реєстратор. Про кожен крок я&nbsp;повідомляю і&nbsp;кажу, чого чекати далі.</div></li>
-    </ol>
-  </section>
-
-  <section aria-labelledby="h-terms">
-    <h2 id="h-terms" class="enamel sign">Спершу договір</h2>
-    <div class="brass plaque">
-      <p class="eng big">Укладаємо договір — і&nbsp;лише тоді ви платите.</p>
-      <p class="eng">Я не беру оплату, доки не переконаюся, що є хоч мінімальні шанси на&nbsp;успіх.</p>
-      <p class="eng">Гонорар адвоката можна стягнути з&nbsp;опонента. Якщо захочете, закладемо це у&nbsp;вимоги.</p>
-      <p class="eng">У&nbsp;частині справ домовляємося про повернення гонорару і&nbsp;пишемо це прямо в&nbsp;договорі.</p>
-    </div>
-  </section>
-
-  <section aria-labelledby="h-cases">
-    <h2 id="h-cases" class="enamel sign">У&nbsp;вітрині&nbsp;— рішення</h2>
-    <div class="window">
-      <div class="window-in">
-        <div class="vitrina" tabindex="0" role="region" aria-label="Рішення судів, гортайте вбік">
-          <figure><a href="assets/case-pozyka.webp" target="_blank"><img src="assets/case-pozyka.webp" width="760" height="1035" loading="lazy" alt="Фрагмент рішення суду: стягнення позики"></a><figcaption>Виграли справу про стягнення позики</figcaption></figure>
-          <figure><a href="assets/case-alimenty.webp" target="_blank"><img src="assets/case-alimenty.webp" width="760" height="951" loading="lazy" alt="Фрагмент рішення суду: збільшення аліментів"></a><figcaption>Збільшили розмір аліментів</figcaption></figure>
-          <figure><a href="assets/case-mayno.webp" target="_blank"><img src="assets/case-mayno.webp" width="760" height="1170" loading="lazy" alt="Фрагмент рішення суду: поділ майна"></a><figcaption>Поділили майно і&nbsp;стягнули гонорар з&nbsp;другої сторони: 29&nbsp;000&nbsp;грн</figcaption></figure>
-          <figure><a href="assets/case-batkivski.webp" target="_blank"><img src="assets/case-batkivski.webp" width="760" height="1053" loading="lazy" alt="Фрагмент рішення суду: позбавлення батьківських прав"></a><figcaption>Позбавили батьківських прав</figcaption></figure>
-          <figure><a href="assets/case-notarius.webp" target="_blank"><img src="assets/case-notarius.webp" width="760" height="849" loading="lazy" alt="Фрагмент рішення суду: захист нотаріуса"></a><figcaption>Захистили нотаріуса</figcaption></figure>
-        </div>
+        <p class="small">Або МТС: <a href="tel:+380500108718" data-ev="phone_click">050 010 87 18</a>. Експрес-консультація безкоштовна. Це вас ні до чого не зобов'язує.</p>
       </div>
     </div>
-    <div class="window-sill" aria-hidden="true"></div>
-    <p class="hint">Гортайте вбік. Фрагменти рішень, персональні дані закрито.</p>
+  </header>
+
+  <!-- ===== side A ===== -->
+  <p class="side-label">Сторона А</p>
+
+  <section class="track" id="a1" aria-labelledby="h-a1">
+    <div class="track-h"><span class="n" aria-hidden="true">А1</span><h2 id="h-a1">Ясність за 5&nbsp;хвилин</h2></div>
+    <p>Юридична проблема лякає не складністю, а&nbsp;невідомістю. Тому спершу я&nbsp;прибираю невідомість.</p>
+    <p>Напишіть або подзвоніть у&nbsp;Viber, WhatsApp, Telegram чи на&nbsp;телефон і&nbsp;коротко опишіть, що сталося.</p>
   </section>
 
-  <section aria-labelledby="h-rev">
-    <h2 id="h-rev" class="enamel sign">Що пишуть клієнти</h2>
-    <div class="window"><div class="window-in">
-      <div class="board">
-        <figure><img src="assets/rev-oleh.webp" width="640" height="686" loading="lazy" alt="Відгук клієнта: справу вирішено швидко і якісно"></figure>
-        <figure><img src="assets/rev-rozluchennya.webp" width="640" height="784" loading="lazy" alt="Відгук клієнтки про допомогу в розлученні"></figure>
-      </div>
-    </div></div>
-    <div class="window-sill" aria-hidden="true"></div>
+  <section class="track" id="a2" aria-labelledby="h-a2">
+    <div class="track-h"><span class="n" aria-hidden="true">А2</span><h2 id="h-a2">План дій за 1&nbsp;день</h2></div>
+    <p>Надішліть документи в&nbsp;месенджер, паспорт не&nbsp;потрібен. За&nbsp;день я&nbsp;даю план дій для вашої ситуації.</p>
+  </section>
+
+  <section class="track" id="a3" aria-labelledby="h-a3">
+    <div class="track-h"><span class="n" aria-hidden="true">А3</span><h2 id="h-a3">Документи в&nbsp;суді за 2&nbsp;дні</h2></div>
+    <p>Далі — супровід: суд, слідство, нотаріус, БТІ, реєстратор. Про кожен крок я&nbsp;повідомляю і&nbsp;кажу, чого чекати далі.</p>
+  </section>
+
+  <section class="track" id="a4" aria-labelledby="h-a4">
+    <div class="track-h"><span class="n" aria-hidden="true">А4</span><h2 id="h-a4">Спершу договір, потім оплата</h2></div>
+    <div class="liner">
+      <p class="big">Укладаємо договір — і&nbsp;лише тоді ви платите.</p>
+      <p>Я не беру оплату, доки не переконаюся, що є хоч мінімальні шанси на&nbsp;успіх.</p>
+      <p>Гонорар адвоката можна стягнути з&nbsp;опонента. Якщо захочете, закладемо це у&nbsp;вимоги.</p>
+      <p>У&nbsp;частині справ домовляємося про повернення гонорару і&nbsp;пишемо це прямо в&nbsp;договорі.</p>
+    </div>
+  </section>
+
+  <!-- ===== side B ===== -->
+  <p class="side-label" id="side-b">Сторона Б</p>
+
+  <section class="track" aria-labelledby="h-b1">
+    <div class="track-h"><span class="n" aria-hidden="true">Б1</span><h2 id="h-b1">Що вже вийшло в&nbsp;судах</h2></div>
+    <div class="vinyl" tabindex="0" role="region" aria-label="Рішення судів, гортайте вбік">
+      <figure><a href="assets/case-pozyka.webp" target="_blank"><img src="assets/case-pozyka.webp" width="760" height="1035" loading="lazy" alt="Фрагмент рішення суду: стягнення позики"></a><figcaption>Виграли справу про стягнення позики</figcaption></figure>
+      <figure><a href="assets/case-alimenty.webp" target="_blank"><img src="assets/case-alimenty.webp" width="760" height="951" loading="lazy" alt="Фрагмент рішення суду: збільшення аліментів"></a><figcaption>Збільшили розмір аліментів</figcaption></figure>
+      <figure><a href="assets/case-mayno.webp" target="_blank"><img src="assets/case-mayno.webp" width="760" height="1170" loading="lazy" alt="Фрагмент рішення суду: поділ майна"></a><figcaption>Поділили майно і&nbsp;стягнули гонорар з&nbsp;другої сторони: 29&nbsp;000&nbsp;грн</figcaption></figure>
+      <figure><a href="assets/case-batkivski.webp" target="_blank"><img src="assets/case-batkivski.webp" width="760" height="1053" loading="lazy" alt="Фрагмент рішення суду: позбавлення батьківських прав"></a><figcaption>Позбавили батьківських прав</figcaption></figure>
+      <figure><a href="assets/case-notarius.webp" target="_blank"><img src="assets/case-notarius.webp" width="760" height="849" loading="lazy" alt="Фрагмент рішення суду: захист нотаріуса"></a><figcaption>Захистили нотаріуса</figcaption></figure>
+    </div>
+    <p class="small">Гортайте вбік. Фрагменти рішень, персональні дані закрито.</p>
+  </section>
+
+  <section class="track" aria-labelledby="h-b2">
+    <div class="track-h"><span class="n" aria-hidden="true">Б2</span><h2 id="h-b2">Що пишуть клієнти</h2></div>
+    <div class="reviews">
+      <figure><img src="assets/rev-oleh.webp" width="640" height="686" loading="lazy" alt="Відгук клієнта: справу вирішено швидко і якісно"></figure>
+      <figure><img src="assets/rev-rozluchennya.webp" width="640" height="784" loading="lazy" alt="Відгук клієнтки про допомогу в розлученні"></figure>
+    </div>
     <details class="more">
       <summary><span class="open">Ще чотири відгуки</span><span class="shut">Згорнути</span></summary>
-      <div class="board">
+      <div class="reviews">
         <figure><img src="assets/rev-lilia.webp" width="640" height="461" loading="lazy" alt="Відгук клієнтки з подякою"></figure>
         <figure><img src="assets/rev-olha.webp" width="640" height="812" loading="lazy" alt="Відгук клієнтки з Німеччини"></figure>
         <figure><img src="assets/rev-gpt.webp" width="640" height="569" loading="lazy" alt="Відгук клієнта з подякою"></figure>
@@ -283,11 +232,11 @@ footer{margin-top:28px;text-align:center;font-size:13px;color:var(--ink-2)}
     </details>
   </section>
 
-  <section class="who" aria-labelledby="h-who">
-    <h2 id="h-who" class="enamel sign">Хто за дверима</h2>
+  <section class="track" aria-labelledby="h-b3">
+    <div class="track-h"><span class="n" aria-hidden="true">Б3</span><h2 id="h-b3">Хто вестиме справу</h2></div>
     <p><b>Василь Масюк</b> — адвокат, кандидат юридичних наук, магістр психології. Юридична практика з&nbsp;2005&nbsp;року, адвокат з&nbsp;2008-го.</p>
     <p>Автор 15&nbsp;книг, сертифікований коуч і&nbsp;керівник проєктів. Досліджую складні справи, пишу про них книги. На телебаченні й&nbsp;радіо я&nbsp;ще з&nbsp;нульових.</p>
-    <div class="frames">
+    <div class="docs">
       <a href="assets/doc-gramota.webp" target="_blank"><img src="assets/doc-gramota.webp" width="760" height="1349" loading="lazy" alt="Грамота Національної асоціації адвокатів України"></a>
       <a href="assets/doc-svidotstvo.webp" target="_blank"><img src="assets/doc-svidotstvo.webp" width="760" height="1071" loading="lazy" alt="Свідоцтво про реєстрацію авторського права"></a>
       <a href="assets/doc-prokuratura.webp" target="_blank"><img src="assets/doc-prokuratura.webp" width="760" height="1018" loading="lazy" alt="Подяка прокуратури області"></a>
@@ -295,8 +244,20 @@ footer{margin-top:28px;text-align:center;font-size:13px;color:var(--ink-2)}
     </div>
   </section>
 
-  <section aria-labelledby="h-gift">
-    <h2 id="h-gift" class="enamel sign">Після договору&nbsp;— подарунки</h2>
+  <section class="track faq" aria-labelledby="h-b4">
+    <div class="track-h"><span class="n" aria-hidden="true">Б4</span><h2 id="h-b4">Сумніви — чесно</h2></div>
+    <details><summary>Що, як справу не виграємо? Гроші повернуться?<i aria-hidden="true"></i></summary>
+      <p>Результат суду не може гарантувати ніхто: ні я, ні&nbsp;будь-який інший адвокат. Я&nbsp;гарантую інше: максимум зусиль, знань і&nbsp;досвіду, стратегію на&nbsp;логіці, праві й&nbsp;психології. А&nbsp;в&nbsp;частині справ ми&nbsp;домовляємося про повернення гонорару і&nbsp;пишемо це в&nbsp;договорі.</p></details>
+    <details><summary>Усе онлайн? Чи можна прийти особисто?<i aria-hidden="true"></i></summary>
+      <p>Більшість питань вирішуємо онлайн: я&nbsp;підключений до&nbsp;електронного суду, а&nbsp;вам не&nbsp;треба їхати й&nbsp;стояти в&nbsp;заторах. Прийти теж можна: вул.&nbsp;Героїв Чернігова,&nbsp;5А. Якщо вам зручніше в&nbsp;іншому місті, назвіть його, і&nbsp;я&nbsp;запропоную найближчого адвоката з&nbsp;нашої команди.</p></details>
+    <details><summary>Навіщо платити до початку роботи? Що, як ви зникнете?<i aria-hidden="true"></i></summary>
+      <p>Аванс — це старт роботи, а&nbsp;не&nbsp;плата за обіцянки, і&nbsp;він лише за договором із&nbsp;підписами обох сторін. Моя робота публічна: наука, книги, телебачення. Зникнути з&nbsp;вашими грошима означало&nbsp;б перекреслити все це.</p></details>
+    <details><summary>Я у вас сумніваюся.<i aria-hidden="true"></i></summary>
+      <p>І&nbsp;правильно: першому зустрічному справи не&nbsp;довіряють. Вам не&nbsp;обов'язково, щоб я&nbsp;подобався. Вам потрібно, щоб я&nbsp;захищав ваші інтереси, родину, майно чи бізнес, навіть коли ситуація здається безнадійною. Поговоріть зі&nbsp;мною 5&nbsp;хвилин — і&nbsp;вирішите самі.</p></details>
+  </section>
+
+  <section class="track" aria-labelledby="h-bonus">
+    <div class="track-h"><span class="n" aria-hidden="true">+</span><h2 id="h-bonus">Бонус-трек: подарунки після договору</h2></div>
     <div class="gift">
       <figure class="book"><img src="assets/book-rozmovlyaty.webp" width="571" height="808" loading="lazy" alt="Обкладинка книги «Як розмовляти з ким завгодно і про що завгодно»"></figure>
       <ul>
@@ -308,37 +269,18 @@ footer{margin-top:28px;text-align:center;font-size:13px;color:var(--ink-2)}
     </div>
   </section>
 
-  <section class="faq" aria-labelledby="h-faq">
-    <h2 id="h-faq" class="enamel sign">Сумніви&nbsp;— чесно</h2>
-    <details><summary>Що, як справу не виграємо? Гроші повернуться?<i aria-hidden="true"></i></summary>
-      <p>Результат суду не може гарантувати ніхто: ні я, ні&nbsp;будь-який інший адвокат. Я&nbsp;гарантую інше: максимум зусиль, знань і&nbsp;досвіду, стратегію на&nbsp;логіці, праві й&nbsp;психології. А&nbsp;в&nbsp;частині справ ми&nbsp;домовляємося про повернення гонорару і&nbsp;пишемо це в&nbsp;договорі.</p></details>
-    <details><summary>Усе онлайн? Чи можна прийти особисто?<i aria-hidden="true"></i></summary>
-      <p>Більшість питань вирішуємо онлайн: я&nbsp;підключений до&nbsp;електронного суду, а&nbsp;вам не&nbsp;треба їхати й&nbsp;стояти в&nbsp;заторах. Прийти теж можна: вул.&nbsp;Героїв Чернігова,&nbsp;5А. Якщо вам зручніше в&nbsp;іншому місті, назвіть його, і&nbsp;я&nbsp;запропоную найближчого адвоката з&nbsp;нашої команди.</p></details>
-    <details><summary>Навіщо платити до початку роботи? Що, як ви зникнете?<i aria-hidden="true"></i></summary>
-      <p>Аванс — це старт роботи, а&nbsp;не&nbsp;плата за обіцянки, і&nbsp;він лише за договором із&nbsp;підписами обох сторін. Моя робота публічна: наука, книги, телебачення. Зникнути з&nbsp;вашими грошима означало&nbsp;б перекреслити все це.</p></details>
-    <details><summary>Я у вас сумніваюся.<i aria-hidden="true"></i></summary>
-      <p>І&nbsp;правильно: першому зустрічному справи не&nbsp;довіряють. Вам не&nbsp;обов'язково, щоб я&nbsp;подобався. Вам потрібно, щоб я&nbsp;захищав ваші інтереси, родину, майно чи бізнес, навіть коли ситуація здається безнадійною. Поговоріть зі&nbsp;мною 5&nbsp;хвилин — і&nbsp;вирішите самі.</p></details>
-  </section>
-
-  <section aria-labelledby="h-close">
-    <h2 id="h-close" class="enamel sign">Залишити як&nbsp;є&nbsp;— чи почнемо?</h2>
-    <div class="door close-door">
-      <div class="brass nameplate"><span class="eng who">адвокат</span><span class="eng nm">Василь Масюк</span><span class="eng rg">Івано-Франківськ та область</span></div>
-      <a class="brass bell" href="tel:+380961230671" data-ev="phone_click"><span class="btn-dot" aria-hidden="true"></span><span class="eng">Подзвонити</span> <span class="eng num">096 123 06 71</span></a>
-      <div class="mplates">
-        <a class="enamel mplate" href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
-        <a class="enamel mplate" href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
-        <a class="enamel mplate" href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
+  <section class="outro" aria-labelledby="h-out">
+    <h2 id="h-out">Залишити як&nbsp;є&nbsp;— чи&nbsp;почнемо?</h2>
+    <div class="cta">
+      <a class="btn btn-call" href="tel:+380961230671" data-ev="phone_click"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Подзвонити <span class="num">096 123 06 71</span></a>
+      <div class="msgs">
+        <a class="btn btn-msg" href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
+        <a class="btn btn-msg" href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
+        <a class="btn btn-msg" href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
       </div>
-      <p class="note">Це вас ні до чого не зобов'язує.</p>
+      <p class="small">Це вас ні до чого не зобов'язує.</p>
     </div>
-    <div class="sill" aria-hidden="true"></div>
-    <div class="enamel addr-plate">
-      <span class="t">Де зустрітися</span>
-      <span class="a">вул.&nbsp;Героїв Чернігова,&nbsp;5А</span>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%2C%20%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D0%BE%D0%B2%D0%B0%2C%205%D0%90" rel="noopener">Відкрити на карті</a>
-    </div>
-    <p class="hint" style="text-align:center">Напишіть заздалегідь, і&nbsp;узгодимо час.</p>
+    <p class="where"><small>Де зустрітися</small>Івано-Франківськ, вул.&nbsp;Героїв Чернігова,&nbsp;5А<br><a href="https://www.google.com/maps/search/?api=1&amp;query=%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%2C%20%D0%B2%D1%83%D0%BB.%20%D0%93%D0%B5%D1%80%D0%BE%D1%97%D0%B2%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D0%BE%D0%B2%D0%B0%2C%205%D0%90" rel="noopener">Відкрити на карті</a></p>
     <nav class="soc" aria-label="Соцмережі">
       <a href="https://t.me/aadvokatt" rel="noopener">Telegram-канал</a>
       <a href="https://www.instagram.com/aadvokatt" rel="noopener">Instagram</a>
@@ -351,20 +293,22 @@ footer{margin-top:28px;text-align:center;font-size:13px;color:var(--ink-2)}
 
 <nav class="dock" id="dock" aria-label="Зв'язатися">
   <div class="dock-in">
-    <a class="brass" href="tel:+380961230671" data-ev="phone_click"><span class="eng">Подзвонити</span></a>
-    <a class="enamel mplate" href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
-    <a class="enamel mplate" href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
-    <a class="enamel mplate" href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
+    <a class="call" href="tel:+380961230671" data-ev="phone_click">Подзвонити</a>
+    <a href="viber://chat?number=380678390916" data-ev="messenger_click">Viber</a>
+    <a href="https://wa.me/380961230671" data-ev="messenger_click" rel="noopener">WhatsApp</a>
+    <a href="https://t.me/LawPractBot" data-ev="messenger_click" rel="noopener">Telegram</a>
   </div>
 </nav>
 
 <script>
 (function(){
+  if(!('IntersectionObserver' in window)) return;
+  var root=document.documentElement,b=document.getElementById('side-b');
+  root._sideIO=new IntersectionObserver(function(es){var e=es[0];root.classList.toggle('side-b',e.isIntersecting||e.boundingClientRect.top<0)},{threshold:0,rootMargin:'0px 0px -55% 0px'});
+  root._sideIO.observe(b);
   var dock=document.getElementById('dock'),seen=new Set();
-  if('IntersectionObserver' in window){
-    dock._io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?seen.add(e.target):seen.delete(e.target)});dock.classList.toggle('away',seen.size>0)},{threshold:0});
-    document.querySelectorAll('.door').forEach(function(d){dock._io.observe(d)});
-  }
+  dock._io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?seen.add(e.target):seen.delete(e.target)});dock.classList.toggle('away',seen.size>0)},{threshold:0});
+  document.querySelectorAll('.cta').forEach(function(c){dock._io.observe(c)});
   if(/advokatif\.in\.ua$/.test(location.hostname)){
     var s=document.createElement('script');s.async=1;s.src='https://www.googletagmanager.com/gtag/js?id=G-ZMB67B9XYK';document.head.appendChild(s);
     window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};
